@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Variables for Light and Dark Mode */
+:root {
+  --background: #ffffff; /* Light mode background */
+  --foreground: #171717; /* Light mode text */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a; /* Dark mode background */
+    --foreground: #ededed; /* Dark mode text */
+  }
+}
+
+/* Applying Global Styles */
+body {
+  color: var(--foreground); /* Use custom foreground color */
+  background: var(--background); /* Use custom background color */
+  font-family: Arial, Helvetica, sans-serif; /* Default font */
+}
